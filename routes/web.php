@@ -89,3 +89,7 @@ Route::get(
     'kata-bijak/pepatah',
     [KataBijakController::class, 'pepatah']
 )->name('kataPepatah');
+
+//Route Resource ke Controller Barang
+use App\Http\Controllers\BarangController;
+Route::resource('barang', BarangController::class);
