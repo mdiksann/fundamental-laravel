@@ -11,7 +11,7 @@ class KataBijakController extends Controller
         echo "Rajin Pangkal Pandai";
     }
 
-    public function pepatah()
+    public function  pepatah()
     {
         return view('kata-bijak');
     }
