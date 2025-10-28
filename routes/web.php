@@ -63,6 +63,7 @@ Route::resource('produk', ProdukController::class);
 
 // Route resource untuk Provinsi (CRUD)
 use App\Http\Controllers\ProvinsiController;
+
 Route::resource('provinsi', ProvinsiController::class);
 
 //Route group (middleware & prefix)
@@ -92,4 +93,14 @@ Route::get(
 
 //Route Resource ke Controller Barang
 use App\Http\Controllers\BarangController;
+
 Route::resource('barang', BarangController::class);
+
+//Route ke Controller Elo
+use App\Http\Controllers\EloController;
+
+Route::get('elo/bacaAll', [EloController::class, 'bacaAll']);
+Route::get('elo/bacaAllRelasi', [EloController::class, 'bacaAllRelasi']);
+Route::get('elo/bacaSatu', [EloController::class, 'bacaSatu']);
+Route::get('elo/bacaPilih', [EloController::class, 'bacaPilih']);
+Route::get('elo/tambahKota', [EloController::class, 'tambahKota'])->name('kota.tambahKota');
