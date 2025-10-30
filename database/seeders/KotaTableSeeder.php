@@ -18,7 +18,10 @@ class KotaTableSeeder extends Seeder
         DB::table('kota')->insert([
             ['propinsi_id' => 1, 'nama_kota' => 'Bantul'],
             ['propinsi_id' => 1, 'nama_kota' => 'Sleman'],
-            ['propinsi_id' => 1, 'nama_kota' => 'Kulon Progo']
+            ['propinsi_id' => 1, 'nama_kota' => 'Kulon Progo'],
+            ['propinsi_id' => 2, 'nama_kota' => 'Solo'],
+            ['propinsi_id' => 2, 'nama_kota' => 'Semarang'],
+            ['propinsi_id' => 3, 'nama_kota' => 'Malang']
         ]);
     }
 }
